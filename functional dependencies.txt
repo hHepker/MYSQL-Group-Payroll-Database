@@ -1,0 +1,36 @@
+FILE:	functional dependencies
+DATE:	2019-10-31
+AUTHOR:	Group 1 (Payroll)
+
+#-------------------------------------------------------------------------------
+
+#Employee Table
+Employee_Id --> Employee_firstName, Employee_lastName, 
+Employee_address, Employee_zip, Employee_hourType,
+Employee_timeType, Employee_ position
+
+#Wages Table
+Check_number --> Pay_rate, Hours_worked, Pay_amount, Overtime_pay
+
+#Withholdings Table
+Check_number --> FICA_SS_amount, FICA_Med_amount, FIT_amount
+
+#Taxes table
+Tax_type --> Tax_bracket, Tax_percent, Max_pay 
+
+#Paystub Table
+Check_number --> Pay_period_begins, Pay_period_ends, Check_date, 
+Net_check_amount, Employee_Id
+
+#Zipcode Table
+Zip --> City, State
+
+#W4 Table
+Employee_Id --> Filing_status, Tax_bracket, Additional_amount,
+Exemption
+
+
+
+#-------------------------------------------------------------------------------
+#                              END OF FILE
+#-------------------------------------------------------------------------------

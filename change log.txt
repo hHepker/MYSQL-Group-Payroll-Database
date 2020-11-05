@@ -1,0 +1,15 @@
+Change Log Group 1 - Payroll
+
+11/05 --> Changed the make up of our Wage_withholdings table 
+into our Taxes table. As well as added a Zip tabel and a W4 table.
+We also added another element into our Employee Table (zip).
+With the changes to the tables we had to change them on the funational
+dependencies, the data dictionary as well as our E-R Diagram.
+
+11/05 --> Changed the data tyoe on the paystub pay period and check dates,
+from DATETIME to DATE. Also changed Net_check_amount from DECIMAL(3,2)
+to (5,2). Changed the set up numbers for our DECIMAL data types.
+
+11/06 --> Changed the order of the table creation. Made some corrections top make 
+constraints work. Added select statements to get the data we needed for 
+the requirements in the assignment.
